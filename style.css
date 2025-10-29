@@ -1,0 +1,85 @@
+:root {
+    --font-size: 1rem;
+    --color-1: brown;
+    --timer-width: calc(var(--font-size)*6);
+    
+}
+
+body {
+    background-color: #131313;
+    color: #e7eaf6;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 800;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#scoreBoard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: calc(var(--font-size)*18);
+    height: calc(var(--font-size)*12);
+    border: 1px solid #e7eaf6;
+}
+
+#timer {
+    border: 1px solid #e7eaf6;
+    padding: calc(var(--font-size)*0.5) calc(var(--font-size)*0.7);
+    color: var(--color-1);
+    width: var(--timer-width);
+    box-sizing: border-box;
+}
+
+#scores {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#scoreControls {
+    display: flex;
+    justify-content: space-between;
+    gap: calc(var(--font-size)*0.5);
+}
+
+.controlButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: calc(var(--font-size)*0.7);
+}
+button {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: 1px solid #e7eaf6;
+    font-size: inherit;
+    padding: calc(var(--font-size)*0.3);
+}
+.teamScore{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: calc(var(--font-size)*1.2);
+    
+}
+.teamScore .score {
+    width: calc(var(--timer-width)*0.5);
+    border: 1px solid #e7eaf6;
+    padding: calc(var(--font-size)*0.5) calc(var(--font-size)*0.7);
+    color: var(--color-1);
+}
+.teamName{
+    margin: 0 0 calc(var(--font-size)*0.5) 0;
+}
+#gameControls button{
+    width: var(--timer-width);
+    padding: calc(var(--font-size)*0.5) calc(var(--font-size)*0.7);
+}
+
+button:enabled:hover{
+    background-color: #e7eaf634;
+}

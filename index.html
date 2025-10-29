@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div id="scoreBoard">
+        <div id="timer">38:23</div>
+        <div id="scores">
+            <div class="teamScore">
+                <p class="teamName" id="homeName">Home</p>
+                <div class="score" id="homeScore">012</div>
+            </div>
+            <div id="scoreControls">
+                <div id="homeControls" class="controlButtons">
+                    <button onclick="addpoints(1,'home')">+1</button>
+                    <button onclick="addpoints(2,'home')">+2</button>
+                    <button onclick="addpoints(3,'home')">+3</button>
+                </div>
+                <div id="guestControls" class="controlButtons">
+                    <button onclick="addpoints(1,'guest')">+1</button>
+                    <button onclick="addpoints(2,'guest')">+2</button>
+                    <button onclick="addpoints(3,'guest')">+3</button>
+                </div>
+            </div>
+            <div class="teamScore">
+                <p class="teamName" id="guestName">Guest</p>
+                <div class="score" id="guestScore">011</div>
+            </div>
+        </div>
+        <div id="gameControls">
+            <button id="resetBtn">Reset</button>
+        </div>
+        
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
