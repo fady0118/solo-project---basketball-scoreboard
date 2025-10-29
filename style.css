@@ -22,6 +22,7 @@ body {
     width: calc(var(--font-size)*18);
     height: calc(var(--font-size)*12);
     border: 1px solid #e7eaf6;
+    margin: 1rem auto;
 }
 
 #timer {
